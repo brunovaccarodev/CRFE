@@ -1,3 +1,3 @@
 # CRFE
-Climatic Registry for Enterprises \n
-Software para Registro y Monitoreo de datos climáticos
+# Climatic Registry for Enterprises 
+# Software para Registro y Monitoreo de datos climáticos
