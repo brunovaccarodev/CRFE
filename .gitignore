@@ -1,0 +1,21 @@
+# Eclipse files
+.classpath
+.project
+.settings/
+
+# Build directories
+bin/
+target/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE metadata
+*.iml
+.idea/
+
+CRFE.sql
+README.md
+cfre.sql
