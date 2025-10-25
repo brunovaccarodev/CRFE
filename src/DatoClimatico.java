@@ -1,7 +1,7 @@
 
-public class DatoClimatico {
-	private int idDato;
-	private String FechaHora;                                 //Ver Diagrama
+public class DatoClimatico {														//Definición de clase
+	private int idDato;																//Definición de atributos
+	private String FechaHora;                              
 	private double Temperatura;
 	private double Humedad;
 	private double Precipitacion;
@@ -9,13 +9,9 @@ public class DatoClimatico {
 	private double Radiacion;
 	private int idEstacion;
 	private int idUsuario;
-
-	
-	//Ver tema de encapsulamiento
-	//Setters y getters
 	
 	
-	public int obtenerIdDato () {
+	public int obtenerIdDato () {													//Definición de métodos constructores
 		return idDato;
 	}
 	
@@ -87,7 +83,7 @@ public class DatoClimatico {
 		idUsuario = IDUsuario;
 	}
 	
-	public double registrarTemperatura() {
+	public double registrarTemperatura() {											//Este método aún no se utiliza
 		double temp = obtenerTemperatura();
 		try {
 			if (temp > 0 && temp < 100) {
@@ -100,3 +96,4 @@ public class DatoClimatico {
 	}
 	
 }
+
