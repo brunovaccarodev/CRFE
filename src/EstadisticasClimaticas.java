@@ -1,4 +1,3 @@
-
 public class EstadisticasClimaticas extends DatoClimatico {															//Esta clase es hija de la clase DatoClimatico (Aplicando herencia)
 	private int IdEstadisticas;																						//Definicion de atributos
 	private String FechaDeIncio;
@@ -18,7 +17,7 @@ public class EstadisticasClimaticas extends DatoClimatico {															//Esta
 		IdEstadisticas = IDEstadisticas;
 	}
 	
-	/* public String obtenerFechaDeInicio() {
+	/* public String obtenerFechaDeInicio() {																		Métodos comentados para futura implementación
 		return FechaDeIncio;
 	}
 	
