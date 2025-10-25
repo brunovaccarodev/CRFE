@@ -1,3 +1,6 @@
+/*
+Autor: Bruno Vaccaro
+*/
 public class DatoClimatico {														//Definición de clase
 	private int idDato;																//Definición de atributos
 	private String FechaHora;                              
@@ -76,3 +79,4 @@ public class DatoClimatico {														//Definición de clase
 		return temp;
 	}
 }
+
