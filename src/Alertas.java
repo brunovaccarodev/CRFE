@@ -1,3 +1,6 @@
+/*
+Autor: Bruno Vaccaro
+*/
 public class Alertas {																			//Definición de clase
 	private int IdAlerta;																		//Definción de atributos
 	private String Nombre;
@@ -54,3 +57,4 @@ public class Alertas {																			//Definición de clase
 		FechaDeCreacion = fechaDeCreacion;
 	}
 }
+
