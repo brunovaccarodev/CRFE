@@ -1,3 +1,6 @@
+/*
+Autor: Bruno Vaccaro
+*/
 /* 
 Importación de librerías Java Swing
 */
@@ -23,7 +26,7 @@ GUI
 */
     public PantallaPrincipal() {
         setTitle("Climatic Registry for Enterprises");											//Ventana
-        setSize(1000, 450);
+        setSize(1200, 850);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
