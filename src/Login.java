@@ -1,10 +1,9 @@
-
-public class Login {
-	private String Usuario;
+public class Login {																				//Definición de clase
+	private String Usuario;																			//Definición de atributos
 	private String Contraseña;
 	private boolean esAutenticado;
 	
-	public String obtenerUsuario() {
+	public String obtenerUsuario() {																//Definición de métodos constructores
 		return Usuario;
 	}
 	
@@ -20,8 +19,7 @@ public class Login {
 		Contraseña = contraseña;
 	}
 	
-	public boolean esAutenticado() {
+	public boolean esAutenticado() {												
 		return esAutenticado;
 	}
-	
 }
