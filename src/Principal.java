@@ -1,3 +1,6 @@
+/*
+Autor: Bruno Vaccaro
+*/
 import javax.swing.JOptionPane;
 
 public class Principal {																			//Definción de la clase
