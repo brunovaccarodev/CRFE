@@ -1,3 +1,6 @@
+/*
+Autor: Bruno Vaccaro
+*/
 public class GeneradorReportes extends Reporte {													//Aplicando herencia (GeneradorReporte extiende de la clase padre Reporte)
 	private int idReporte;																			//Definición de atributos
 	private String NombreDeReporte;
@@ -18,3 +21,4 @@ public class GeneradorReportes extends Reporte {													//Aplicando herenci
 		NombreDeReporte = nombreDeReporte;
 	}
 }
+
