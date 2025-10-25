@@ -1,9 +1,8 @@
-
-public class GeneradorReportes extends Reporte {
-	private int idReporte;
+public class GeneradorReportes extends Reporte {													//Aplicando herencia (GeneradorReporte extiende de la clase padre Reporte)
+	private int idReporte;																			//Definición de atributos
 	private String NombreDeReporte;
 	
-	public int obtenerIdReporte () {
+	public int obtenerIdReporte () {																//Definición de métodos constructores
 		return idReporte;
 	}
 	
