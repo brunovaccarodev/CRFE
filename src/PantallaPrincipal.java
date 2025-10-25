@@ -1,11 +1,14 @@
-import javax.swing.*;
+/* 
+Importación de librerías Java Swing
+*/
+import javax.swing.*;																									
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
-
-
 public class PantallaPrincipal extends JFrame {
-
+/* 
+Creación de objetos a través del instanciamiento de clases 
+*/
     private UnidadesMedida unidadesMedida = new UnidadesMedida();
 	private ConfigurarUnidadesMedida configurarUnidadesMedida = new ConfigurarUnidadesMedida();
 	private DatoClimatico datoClimatico = new DatoClimatico();
@@ -14,34 +17,36 @@ public class PantallaPrincipal extends JFrame {
 	private ExportarDatosClimaticos exportarDatosClimaticos = new ExportarDatosClimaticos();
 	private GeneradorReportes generadorReportes = new GeneradorReportes();
 	private Reporte reporte = new Reporte();
-
+/* 
+Método constructor
+GUI
+*/
     public PantallaPrincipal() {
-        setTitle("Climatic Registry for Enterprises");
+        setTitle("Climatic Registry for Enterprises");											//Ventana
         setSize(1000, 450);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
         JMenuBar menuBar = new JMenuBar();
         
-        JMenu menuMedidas = new JMenu("Configurar Unidades de Medida");
+        JMenu menuMedidas = new JMenu("Configurar Unidades de Medida");							//Opciones
         JMenu datosClimatico = new JMenu ("Datos Climaticos");
         JMenu EstacionMeteorologica = new JMenu ("Estacion Meteorológica");
         JMenu EstadisticasClimaticas = new JMenu ("Estadísticas Climáticas");
         JMenu ExportarDatosClimaticos = new JMenu ("Exportar Datos Climáticos");
         JMenu menuReporte = new JMenu ("Reporte");
-        
 
-        JMenuItem CaF = new JMenuItem("Convertir Grados Celsius a Fahrenheit");
+        JMenuItem CaF = new JMenuItem("Convertir Grados Celsius a Fahrenheit");					//Opciones
         JMenuItem FaC = new JMenuItem("Convertir Grados Fahrenheit a Celsius");
         JMenuItem Salir = new JMenuItem("Salir");
         
-        JMenuItem temp = new JMenuItem("Registrar Temperatura");
+        JMenuItem temp = new JMenuItem("Registrar Temperatura");								//Opciones
         JMenuItem hume = new JMenuItem("Registrar Humedad");
         JMenuItem precipita = new JMenuItem ("Registrar Precipitacion");
         JMenuItem vien = new JMenuItem ("Registrar Viento");
         JMenuItem rad = new JMenuItem ("Registrar Radiacion");
         
-        JMenuItem nom = new JMenuItem ("Nombre");
+        JMenuItem nom = new JMenuItem ("Nombre");												//Opciones
         JMenuItem ubi = new JMenuItem ("Ubicación");
         JMenuItem lat = new JMenuItem ("Latitud");
         JMenuItem lon = new JMenuItem ("Longitud");
@@ -50,23 +55,21 @@ public class PantallaPrincipal extends JFrame {
         JMenuItem est = new JMenuItem ("Estado");
         JMenuItem fec = new JMenuItem ("Fecha de instalación");
         
-        JMenuItem tempPromed = new JMenuItem ("Registrar Temperatura promedio");
+        JMenuItem tempPromed = new JMenuItem ("Registrar Temperatura promedio");				//Opciones
         JMenuItem humPromed = new JMenuItem ("Registrar Humedad promedio");
         JMenuItem precipPromed = new JMenuItem ("Registrar Precipitación promedio");
         JMenuItem veloVienPromed = new JMenuItem ("Registrar Velocidad del viento promedio");
         JMenuItem radiacionPromed = new JMenuItem ("Registrar Radiación promedio");
         
-        JMenuItem PDF = new JMenuItem ("Exportar a PDF");
+        JMenuItem PDF = new JMenuItem ("Exportar a PDF");										//Opciones
         JMenuItem CSV = new JMenuItem ("Exportar a CSV");
         
-        JMenuItem generarReporte = new JMenuItem ("Generar Reporte de datos climáticos");
-        
-        
-        
-        
-        
-        
+        JMenuItem generarReporte = new JMenuItem ("Generar Reporte de datos climáticos");		//Opcion
 
+		/* 
+		Añadiendo menú de opciones
+		*/
+		
         menuMedidas.add(CaF);
         menuMedidas.add(FaC);
         menuMedidas.addSeparator();
@@ -97,10 +100,6 @@ public class PantallaPrincipal extends JFrame {
         ExportarDatosClimaticos.add(CSV);
         
         menuReporte.add(generarReporte);
-        
-        
-        
-        
 
         menuBar.add(menuMedidas);
         menuBar.add(datosClimatico);
@@ -108,10 +107,11 @@ public class PantallaPrincipal extends JFrame {
         menuBar.add(EstadisticasClimaticas);
         menuBar.add(ExportarDatosClimaticos);
         menuBar.add(generarReporte);
-        setJMenuBar(menuBar);
-  
-
-      
+        setJMenuBar(menuBar); 
+		
+		/*
+			Comportamiento de la Interfaz gráfica
+		*/
 
         CaF.addActionListener(e -> {
             String celsius = JOptionPane.showInputDialog(null, "Ingresar grados Celsius: ", "Entrada de datos", JOptionPane.QUESTION_MESSAGE);
@@ -304,8 +304,6 @@ public class PantallaPrincipal extends JFrame {
             JOptionPane.showMessageDialog(null, "Se ha registrado la siguiente radiación promedio " + RadiacionPromedioObtenida + " W/m² correctamente" , "Ingresar Radiación Promedio" , JOptionPane.INFORMATION_MESSAGE);
         });
     }
-
-
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> new PantallaPrincipal().setVisible(true));
       
