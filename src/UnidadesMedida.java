@@ -1,3 +1,6 @@
+/*
+Autor: Bruno Vaccaro
+*/
 public class UnidadesMedida {																	//Definción de clase									
 	private int IdUnidades;																		//Definición de atributos
 	private int UsuarioID;
@@ -50,3 +53,4 @@ public class UnidadesMedida {																	//Definción de clase
 		Radiacion = radiacion;
 	}
 }
+
