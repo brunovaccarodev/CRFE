@@ -1,3 +1,6 @@
+/*
+Autor: Bruno Vaccaro
+*/
 public class AutenticarUsuario {																//Definción de clase
 	private String Usuario;																		//Definición de atributos
 	private String Contraseña;
@@ -40,3 +43,4 @@ public class AutenticarUsuario {																//Definción de clase
 		return esAutenticado;
 	}
 }
+
