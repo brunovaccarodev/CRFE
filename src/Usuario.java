@@ -1,3 +1,6 @@
+/*
+Autor: Bruno Vaccaro
+*/
 public class Usuario {																					//Definición de clase
 	private int idUsuario;																				//Definición de atributos
 	private String Nombre;
@@ -57,3 +60,4 @@ public class Usuario {																					//Definición de clase
 		FechaRegistro = fecha;
 	}
 }
+
