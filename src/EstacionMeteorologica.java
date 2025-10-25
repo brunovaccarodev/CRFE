@@ -1,3 +1,6 @@
+/*
+Autor: Bruno Vaccaro
+*/
 public class EstacionMeteorologica {														//Definición de clase
 	private int IdEstacion;																	//Definción de atributos
 	private String Nombre;
@@ -68,3 +71,4 @@ public class EstacionMeteorologica {														//Definición de clase
 		return esActiva;
 	}
 }
+
