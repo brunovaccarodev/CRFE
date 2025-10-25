@@ -1,3 +1,6 @@
+/*
+Autor: Bruno Vaccaro
+*/
 import javax.swing.JOptionPane;																	//Importación de librería
 public class ConfigurarUnidadesMedida extends UnidadesMedida {        							//La clase ConfigurarUnidadesMedida es hija de la superclase (o padre) UnidadesMedida
 	private double UnidadTemperatura;															//Definicion de atributos
@@ -80,3 +83,4 @@ public class ConfigurarUnidadesMedida extends UnidadesMedida {        							//L
 		return temperaturaFahrenheit;
 	}
 }
+
