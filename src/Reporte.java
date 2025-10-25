@@ -1,3 +1,6 @@
+/*
+Autor: Bruno Vaccaro
+*/
 import javax.swing.JOptionPane;																					//Importación de librerías
 public class Reporte extends DatoClimatico{																		//Aplicando herencia (Reporte es hija de DatoClimatico)
 	private int idReporte;																						//Definición de atributos
@@ -52,3 +55,4 @@ public class Reporte extends DatoClimatico{																		//Aplicando herenci
 		FormatoDeExportacion = formatoDeExportacion;
 	}
 }
+
