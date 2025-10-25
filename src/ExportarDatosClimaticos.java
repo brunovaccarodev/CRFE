@@ -1,3 +1,6 @@
+/*
+Autor: Bruno Vaccaro
+*/
 public class ExportarDatosClimaticos {															//Definción de clase
 	private String Formato;																		//Definción de atributos
 	private String RutaDestino;
@@ -27,3 +30,4 @@ public class ExportarDatosClimaticos {															//Definción de clase
 		idUsuario = IDUsuario;
 	}
 }
+
