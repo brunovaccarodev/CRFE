@@ -1,10 +1,9 @@
-
-public class ExportarDatosClimaticos {
-	private String Formato;
+public class ExportarDatosClimaticos {															//Definción de clase
+	private String Formato;																		//Definción de atributos
 	private String RutaDestino;
 	private int idUsuario;
 	
-	public String obtenerFormato() {
+	public String obtenerFormato() {															//Definición de métodos constructores
 		return Formato;
 	}
 	
