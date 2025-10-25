@@ -1,5 +1,4 @@
-import javax.swing.JOptionPane;
-
+import javax.swing.JOptionPane;																	//Importación de librería
 public class ConfigurarUnidadesMedida extends UnidadesMedida {        							//La clase ConfigurarUnidadesMedida es hija de la superclase (o padre) UnidadesMedida
 	private double UnidadTemperatura;															//Definicion de atributos
 	private double UnidadHumedad;
@@ -10,40 +9,32 @@ public class ConfigurarUnidadesMedida extends UnidadesMedida {        							//L
 	public double obtenerUnidadTemperatura () {													//Definicion de metodos constructores
 		return UnidadTemperatura;
 	}
-	
 	public void establecerUnidadTemperatura(double unidadTemperatura) {
 		UnidadTemperatura = unidadTemperatura;
 	}
-	
 	public double obtenerUnidadHumedad () {
 		return UnidadHumedad;
 	}
-	
 	public double obtenerUnidadPrecipitacion() {
 		return UnidadPrecipitacion;
 	}
-	
 	public void establecerUnidadPrecipitacion (double unidadPrecipitacion) {
 		UnidadPrecipitacion = unidadPrecipitacion;
 	}
-	
 	public double obtenerUnidadViento() {
 		return UnidadViento;
 	}
-	
 	public void establecerUnidadViento (double unidadViento) {
 		UnidadViento = unidadViento;
 	}
-	
 	public double obtenerUnidadRadiacion() {
 		return UnidadRadiacion;
 	}
-	
 	public void establecerUnidadRadiacion(double unidadRadiacion) {
 		UnidadRadiacion = unidadRadiacion;
 	}
 	
-/*	public boolean esCelsius(boolean t) {															Esta funcion queda comentada para la posible implementacion de la interfaz grafica
+/*	public boolean esCelsius(boolean t) {														  Este método queda comentado para la posible implementacion de la interfaz grafica
 		boolean esCelsius = false;
 		if (t == true) {
 			esCelsius = true;		
@@ -56,7 +47,7 @@ public class ConfigurarUnidadesMedida extends UnidadesMedida {        							//L
 	}
 */
 /*
-	public boolean esFahrenheit(boolean t) {														Esta funcion queda comentada para la posible implementacion de la interfaz grafica
+	public boolean esFahrenheit(boolean t) {														Este método queda comentado para la posible implementacion de la interfaz grafica
 		boolean esFahrenheit = false;
 		if (t == true) {
 			esFahrenheit = true;		
@@ -68,7 +59,7 @@ public class ConfigurarUnidadesMedida extends UnidadesMedida {        							//L
 		
 	}
 */	
-	public double convertirUnidadTemperaturaCelsius (double valorDouble) {              			//Funcion que convierte la temperatura de grados celsius a Fahrenheit
+	public double convertirUnidadTemperaturaCelsius (double valorDouble) {              		  //Método que convierte la temperatura de grados Celsius a Fahrenheit
 		double temperaturaCelsius = 0;
 		
 		try{
@@ -79,7 +70,7 @@ public class ConfigurarUnidadesMedida extends UnidadesMedida {        							//L
 		return temperaturaCelsius;
 	}
 	
-	public double convertirUnidadTemperaturaFahrenheit (double temperaturaF) {                     //Funcion que convierte la temperatura de grados Fahrenheit a celsius 
+	public double convertirUnidadTemperaturaFahrenheit (double temperaturaF) {                     //Método que convierte la temperatura de grados Fahrenheit a Celsius 
 		double temperaturaFahrenheit = 0;
 		try {
 			temperaturaFahrenheit = (temperaturaF - 32 ) * 5/9;															
